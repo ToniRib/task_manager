@@ -1,8 +1,8 @@
 ---
 tasks:
 - id: 1
-  title: hello
-  description: task is here
+  title: hello v2.0
+  description: task is here and is now TOTALLY UPDATED! YAY!!!
 - id: 2
   title: clean the dishes
   description: Need to wash all of the dishes today!
