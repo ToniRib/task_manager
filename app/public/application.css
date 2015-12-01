@@ -12,9 +12,11 @@ main {
   color: #004d40;
 }
 
-.brand-logo {
+.brand-logo,
+.copyright-text {
   margin-left: 20px;
 }
+
 /*
 nav {
   background-color: #5626ff;
