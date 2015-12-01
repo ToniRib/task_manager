@@ -1,5 +1,9 @@
-<h1>All Tasks</h1>
+<header class="row col-md-12">
+  <h1>All Tasks</h1>
+</header>
 
-<% @tasks.each do |task| %>
-  <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
-<% end %>
+<article class="row col-md-12">
+  <% @tasks.each do |task| %>
+    <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
+  <% end %>
+</article>

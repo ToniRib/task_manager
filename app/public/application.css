@@ -27,15 +27,21 @@ li {
   padding-top: 100px;
 }
 
-/*
+.small-top-padding {
+  padding-top: 30px;
+}
 
-grey: #333333
-dark-turquoise: #1d3b3d
-light-blue: #6be4ff
-purple: #3862a8
-red: #731013
+.blue-text {
+  color: #5626ff;
+  font-size: 20px;
+}
 
-*/
+@media (min-width: 768px) {
+  .no-left-pad {
+    padding-left: 0;
+  }
+}
+
 
 /*
 

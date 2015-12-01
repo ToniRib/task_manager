@@ -1,5 +1,11 @@
-<a href="/tasks">Task Index</a>
+<nav class="navbar navbar-nav row col-lg-12 col-md-12 col-sm-12 col-xs-12 no-left-pad">
+  <a href="/tasks">Task Index</a>
+</nav>
 
-<h1><%= @task.title %></h1>
+<header class="text-left small-top-padding">
+  <h1><%= @task.title %></h1>
+</header>
 
-<p><%= @task.description %></p>
+<article>
+  <p class="blue-text"><%= @task.description %></p>
+</article>
