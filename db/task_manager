@@ -58,4 +58,7 @@ tasks:
     newspaper reporter, mistaking my brother for the traffic manager, to whom he bears
     a slight resemblance, waylaid and tried to interview him.  Few people, excepting
     the railway officials, connected the breakdown with the Martians.'
-total: 3
+- id: 4
+  title: postman task
+  description: some description here
+total: 4

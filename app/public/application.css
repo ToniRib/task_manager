@@ -1,23 +1,16 @@
-body {
-  /*display: flex;*/
-  min-height: 100vh;
-  /*flex-direction: column;*/
-}
-
-main {
-  flex: 1 0 auto;
-}
 
 .card-title {
   color: #004d40;
 }
 
-.brand-logo,
-.copyright-text {
-  margin-left: 20px;
+.card .card-action a {
+  color: #00e676;
 }
 
-/*
-nav {
-  background-color: #5626ff;
-}*/
+.card .card-action a:hover {
+  color: #76ff03;
+}
+
+.brand-logo {
+  margin-left: 20px;
+}
