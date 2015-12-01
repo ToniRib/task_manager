@@ -1,0 +1,24 @@
+<header class="row">
+  <h2 class="col m12 s12 center-align cyan-text text-darken-2">Edit Task</h2>
+</header>
+
+<section class="row">
+  <form class="col s12" action="/tasks/<%= @task.id %>" method="post">
+    <div class="row">
+
+      <input type="hidden" name="_method" value="PUT" />
+
+      <div class="input-field col s12">
+        <input class="cyan-text darken-3" type='text' id = "title" name='task[title]' value="<%= @task.title %>"/>
+      </div>
+      <div class="input-field col s12">
+        <textarea class="light-blue-text darken-3" id="description" name='task[description]'><%= @task.description %></textarea>
+      </div>
+
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        <i class="material-icons right">send</i>
+      </button>
+
+    </div>
+  </form>
+</section>

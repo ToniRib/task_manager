@@ -7,23 +7,33 @@ class TaskManagerApp < Sinatra::Base
     erb :dashboard
   end
 
+  # read
   get '/tasks' do
     @tasks = TaskManager.all
     erb :index
   end
 
+  # create (first half)
   get '/tasks/new' do
     erb :new
   end
 
+  # create (second half)
   post '/tasks' do
     TaskManager.create(params[:task])
     redirect '/tasks'
   end
 
+  # read
   get '/tasks/:id' do |id|
     @task = TaskManager.find(id.to_i)
     erb :show
+  end
+
+  # update
+  get '/tasks/:id/edit' do |id|
+    @task = TaskManager.find(id.to_i)
+    erb :edit
   end
 
   not_found do
