@@ -7,6 +7,10 @@ h1 {
   font-size: 40px;
 }
 
+nav {
+  background-color: #5626ff;
+}
+
 a,
 h3 {
   color: #20c749;
