@@ -11,6 +11,10 @@
   color: #76ff03;
 }
 
+.hover-submit:hover {
+  color: #76ff03;
+}
+
 .brand-logo {
   margin-left: 20px;
 }
@@ -18,6 +22,10 @@
 .text-center {
   margin: auto;
   max-width: 800px;
+}
+
+.btn-flat {
+  padding: 0;
 }
 
 textarea {

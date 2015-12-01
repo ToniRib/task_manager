@@ -1,11 +1,5 @@
 ---
 tasks:
-- id: 1
-  title: hello v2.0
-  description: task is here and is now TOTALLY UPDATED! YAY!!!
-- id: 2
-  title: clean the dishes
-  description: Need to wash all of the dishes today!
 - id: 3
   title: Long Task
   description: '"Be a man!" said I.  "You are scared out of your wits!  What good
@@ -60,9 +54,6 @@ tasks:
     the railway officials, connected the breakdown with the Martians.'
 - id: 4
   title: postman task
-  description: some description here
-- id: 5
-  title: new task with new task form
   description: some description here
 - id: 6
   title: Another new task

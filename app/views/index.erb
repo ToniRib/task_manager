@@ -11,7 +11,12 @@
            <div class="card-action indigo">
              <a href="/tasks/<%= task.id %>">View</a>
              <a href="/tasks/<%= task.id %>/edit">Edit</a>
-             <a href="#">Delete</a>
+             <a href="#">
+               <form class="waves-effect waves-teal btn-flat green-text text-accent-3" action="/tasks/<%= task.id %>" method="POST">
+                 <input type="hidden" name="_method" value="DELETE"/>
+                 <input class="hover-submit" type="submit" value="delete"/>
+               </form>
+             </a>
            </div>
          </div>
        </div>
