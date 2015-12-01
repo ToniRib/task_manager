@@ -1,7 +1,21 @@
-nav {
-  background-color: #5626ff;
+body {
+  /*display: flex;*/
+  min-height: 100vh;
+  /*flex-direction: column;*/
 }
 
-.left-margin {
-  margin-left: 80px;
+main {
+  flex: 1 0 auto;
 }
+
+.card-title {
+  color: #004d40;
+}
+
+.brand-logo {
+  margin-left: 20px;
+}
+/*
+nav {
+  background-color: #5626ff;
+}*/

@@ -12,7 +12,7 @@
     </head>
 
     <body>
-      <nav>
+      <nav class="cyan darken-4">
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">Task Manager</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -20,13 +20,34 @@
             <li><a href="/tasks">Task Index</a></li>
             <li><a href="/tasks/new">New Task</a></li>
           </ul>
+
+          <ul id="slide-out" class="side-nav">
+            <li><a href="/">Dashboard</a></li>
+            <li><a href="/tasks">Task Index</a></li>
+            <li><a href="/tasks/new">New Task</a></li>
+          </ul>
+          <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </div>
       </nav>
 
       <%= yield %>
 
+      <footer class="page-footer cyan darken-4">
+        <div class="footer-copyright valign-wrapper">
+          <!-- <div class="container"> -->
+            <p class="left-align valign">
+              © 2015 Toni Rib
+            </p>
+          <!-- </div> -->
+        </div>
+      </footer>
+
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="/materialize.min.js"></script>
+      <script type="text/javascript">
+        // Initialize collapse button
+        $(".button-collapse").sideNav();
+      </script>
     </body>
   </html>
