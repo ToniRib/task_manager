@@ -1,3 +1,48 @@
-h1 {
-  color: red;
+body {
+  background-color: #0c121f;
 }
+
+h1 {
+  color: #3af2fc;
+  font-size: 40px;
+}
+
+a,
+h3 {
+  color: #20c749;
+  font-size: 20px;
+}
+
+a:hover {
+  color: #faa1ff;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  padding: 10px 30px;
+}
+
+.large-top-padding {
+  padding-top: 100px;
+}
+
+/*
+
+grey: #333333
+dark-turquoise: #1d3b3d
+light-blue: #6be4ff
+purple: #3862a8
+red: #731013
+
+*/
+
+/*
+
+navy-blue: #0c121f
+green: #20c749
+pink: #faa1ff
+light-blue: #3af2fc
+purple: #5626ff
+
+*/
