@@ -31,13 +31,13 @@ class TaskManagerApp < Sinatra::Base
     erb :show
   end
 
-  # update
+  # update (first half)
   get '/tasks/:id/edit' do |id|
     @task = TaskManager.find(id.to_i)
     erb :edit
   end
 
-  # update
+  # update (second half)
   put '/tasks/:id' do |id|
     TaskManager.update(id.to_i, params[:task])
     redirect "/tasks/#{id}"
