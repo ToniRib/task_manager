@@ -64,4 +64,7 @@ tasks:
 - id: 5
   title: new task with new task form
   description: some description here
-total: 5
+- id: 6
+  title: Another new task
+  description: this submit button is awesome!
+total: 6
