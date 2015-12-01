@@ -1,10 +1,20 @@
-<header>
-  <h1>Add a New Task</h1>
+<header class="row">
+  <h2 class="col m12 s12 center-align">Add a New Task</h2>
 </header>
 
-<form action="/tasks" method="post">
-  <p class="blue-text">Enter a new task:</p>
-  <input type='text' name='task[title]' placeholder="Title"/><br/>
-  <textarea name='task[description]' placeholder="Description"></textarea><br/>
-  <input class="submit-btn" type='submit'/>
-</form>
+<div class="row">
+  <form class="col s12" action="/tasks" method="post">
+    <div class="row">
+      <h5 class="">Enter a new task:</h5>
+
+      <div class="input-field col s12">
+        <input type='text' id = "title" name='task[title]' placeholder="Title"/>
+      </div>
+      <div class="input-field col s12">
+        <textarea id="description" name='task[description]' placeholder="Description"></textarea>
+      </div>
+
+      <input class="" type='submit'/>
+    </div>
+  </form>
+</div>
