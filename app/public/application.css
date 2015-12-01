@@ -50,12 +50,12 @@ textarea {
 .submit-btn {
   color: #20c749;
   background: #0c121f;
-  border: solid 5px #20c749;
+  border: solid 3px #20c749;
 }
 
 .submit-btn:hover {
   color: #faa1ff;
-  border: solid 5px #faa1ff;
+  border: solid 3px #faa1ff;
 }
 
 @media (min-width: 768px) {
