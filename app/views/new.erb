@@ -2,16 +2,16 @@
   <h2 class="col m12 s12 center-align cyan-text text-darken-2">Add a New Task</h2>
 </header>
 
-<div class="row">
+<section class="row">
   <form class="col s12" action="/tasks" method="post">
     <div class="row">
       <h5 class="">Enter a new task:</h5>
 
       <div class="input-field col s12">
-        <input type='text' id = "title" name='task[title]' placeholder="Title"/>
+        <input class="cyan-text darken-3" type='text' id = "title" name='task[title]' placeholder="Title"/>
       </div>
       <div class="input-field col s12">
-        <textarea id="description" name='task[description]' placeholder="Description"></textarea>
+        <textarea class="light-blue-text darken-3" id="description" name='task[description]' placeholder="Description"></textarea>
       </div>
 
       <button class="btn waves-effect waves-light" type="submit" name="action">Submit
@@ -20,4 +20,4 @@
 
     </div>
   </form>
-</div>
+</section>

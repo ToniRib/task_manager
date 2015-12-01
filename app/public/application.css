@@ -24,6 +24,10 @@ textarea {
   height: 200px;
 }
 
+button {
+  margin: 10px 40%;
+}
+
 @media (min-width: 750px) {
   section {
     max-width: 60%;
