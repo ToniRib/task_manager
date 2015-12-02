@@ -61,10 +61,24 @@ class TaskManagerTest < Minitest::Test
 
     1.upto(3) do |i|
       next if i == 2
-      
+
       assert_equal i, TaskManager.find(i).id
       assert_equal "task#{i}", TaskManager.find(i).title
       assert_equal "description#{i}", TaskManager.find(i).description
     end
+  end
+
+  def test_it_deletes_a_task_record
+    tasks = [{ :title => "task1", :description => "description1" },
+             { :title => "task2", :description => "description2" },
+             { :title => "task3", :description => "description3" }]
+
+    tasks.each { |task| TaskManager.create(task) }
+
+    TaskManager.delete(2)
+
+    assert_equal 2, TaskManager.all.count
+    assert_equal tasks[0][:title], TaskManager.all[0].title
+    assert_equal tasks[2][:title], TaskManager.all[1].title
   end
 end
