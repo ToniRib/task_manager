@@ -75,7 +75,4 @@ tasks:
     on keyboard, but curl into a furry donut if it smells like fish eat as much as
     you wish. Find something else more interesting sleep nap yet sleep on dog bed,
     force dog to sleep on floor cat is love, cat is life. "
-- id: 8
-  title: Multiline Task
-  description: "line 1\r\n\r\nline 2\r\n\r\nline 3"
 total: 8
