@@ -16,5 +16,13 @@ class UserCanCreateANewTask < FeatureTest
     within 'section' do
       assert page.has_content? 'Example Task'
     end
+
+    visit '/tasks/1'
+    within 'h2' do
+      assert page.has_content? 'Example Task'
+    end
+    within 'h5' do
+      assert page.has_content? 'Example Description'
+    end
   end
 end
