@@ -41,4 +41,30 @@ class TaskManagerTest < Minitest::Test
       assert_equal "description#{i}", TaskManager.find(i).description
     end
   end
+
+  def test_it_updates_a_task_record
+    tasks = [{ :title => "task1", :description => "description1" },
+             { :title => "task2", :description => "description2" },
+             { :title => "task3", :description => "description3" }]
+
+    tasks.each { |task| TaskManager.create(task) }
+
+    new_data = { :title => "task2_v2.0",
+                 :description => "description2_v2.0" }
+
+    TaskManager.update(2, new_data)
+
+    updated_task = TaskManager.find(2)
+
+    assert_equal new_data[:title], updated_task.title
+    assert_equal new_data[:description], updated_task.description
+
+    1.upto(3) do |i|
+      next if i == 2
+      
+      assert_equal i, TaskManager.find(i).id
+      assert_equal "task#{i}", TaskManager.find(i).title
+      assert_equal "description#{i}", TaskManager.find(i).description
+    end
+  end
 end
