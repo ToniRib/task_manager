@@ -1,4 +1,5 @@
 require_relative '../test_helper'
+require 'pry'
 
 class TaskManagerTest < Minitest::Test
   def test_it_creates_a_task
@@ -24,6 +25,20 @@ class TaskManagerTest < Minitest::Test
       assert_equal Task, task.class
       assert_equal tasks[i][:title], task.title
       assert_equal tasks[i][:description], task.description
+    end
+  end
+
+  def test_it_finds_a_specific_task
+    tasks = [{ :title => "task1", :description => "description1" },
+             { :title => "task2", :description => "description2" },
+             { :title => "task3", :description => "description3" }]
+
+    tasks.each { |task| TaskManager.create(task) }
+
+    1.upto(3) do |i|
+      assert_equal i, TaskManager.find(i).id
+      assert_equal "task#{i}", TaskManager.find(i).title
+      assert_equal "description#{i}", TaskManager.find(i).description
     end
   end
 end
