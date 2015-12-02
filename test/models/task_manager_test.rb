@@ -51,11 +51,9 @@ class TaskManagerTest < Minitest::Test
 
     new_data = { :title => "task2_v2.0",
                  :description => "description2_v2.0" }
-
     TaskManager.update(2, new_data)
 
     updated_task = TaskManager.find(2)
-
     assert_equal new_data[:title], updated_task.title
     assert_equal new_data[:description], updated_task.description
 
