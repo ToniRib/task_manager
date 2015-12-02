@@ -2,7 +2,11 @@ require 'yaml/store'
 
 class TaskManager
   def self.database
-    @database ||= YAML::Store.new('db/task_manager')
+    if ENV['RACK_ENV'] == 'test'
+      @database ||= YAML::Store.new('db/task_manager_test')
+    else
+      @database ||= YAML::Store.new('db/task_manager')
+    end
   end
 
   def self.create(task)
